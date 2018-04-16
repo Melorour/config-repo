@@ -8,8 +8,3 @@ spring:
     name: order
 server:
   port: 8082
-eureka:
-  client:
-    service-url:
-     defaultZone: http://139.199.119.69:8761/eureka/
-
