@@ -7,7 +7,7 @@ spring:
   application:
     name: order
 server:
-  port:8082
+  port: 8082
   
 env:
   test
