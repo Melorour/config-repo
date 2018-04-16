@@ -8,6 +8,6 @@ spring:
     name: order
 server:
   port:8082
- 
- env:
+  
+env:
   test
