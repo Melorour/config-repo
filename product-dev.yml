@@ -9,19 +9,6 @@ spring:
     host: 139.199.119.69
     username: guest
     port: 5672
-  cloud:
-    stream:
-      bindings:
-        myMessage:
-          group: order
-          content-type: application/json
-    config:
-      discovery:
-        service-id: config
-        enabled: true
-  cloud:
-    config:
-      discovery:
   jpa:
     show-sql: true
 server:
