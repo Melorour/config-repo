@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1/melorour?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+  rabbitmq:
+    password: guest
+    host: 139.199.119.69
+    username: guest
+    port: 5672
+  cloud:
+    stream:
+      bindings:
+        myMessage:
+          group: order
+          content-type: application/json
+    config:
+      discovery:
+        service-id: config
+        enabled: true
+  cloud:
+    config:
+      discovery:
+  jpa:
+    show-sql: true
+server:
+  port: 8081
