@@ -1,0 +1,13 @@
+zuul:
+  routes:
+  #简洁写法
+    #product: /myProduct/**
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+      #接收cookie需要此设置
+      sensitiveHeaders:
+  ignored-patterns:
+  #- 排除某些路由/**/product/listForOrder
+    - /product/product/listForOrder
+    - /myProduct/product/listForOrder
