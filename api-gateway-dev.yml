@@ -1,4 +1,5 @@
-zuul:
+zuul
+  sensitive-headers:
   routes:
   #简洁写法
     #product: /myProduct/**
